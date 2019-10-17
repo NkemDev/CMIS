@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Register Members</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<style>
+    input[type=text],
+input[type=password],
+input[type=date],
+input[type=email]
+ {
+    color: #777;
+    
+    margin-bottom:1%;
+    margin-top: 7%;   
+    text-align: center;
+    width: 290px;
+    height: 35px;
+    float: left;
+    border-radius: 2px;
+    display: flex;
+    position: relative;
+}
+label {
+    /* Other styling... */
+    text-align:left;
+    clear: both;
+    float:left;    
+    margin-top: 10%;
+    margin-right: 10px;
+    display:flex;
+    position: relative;
+    height: 20px;
+    width: 150px;
+    font-weight: bolder;
+    
+    
+}
+.container{
+    display:flex;
+    position:relative;
+    margin-left:25%;
+    
+    border: 1px solid rgb(15, 189, 107);
+    text-align: center;
+    padding-left: 7%;
+    padding-top:2%;
+    margin-top: 2%;
+    border-radius:11px;
+    width:50%;
+    }
+input[type=submit] {
+    float: left;
+    
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left:30%;
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #031608; /*IE fallback*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#44ca80), to(#031608 ));
+    background-image: -moz-linear-gradient(top left 90deg, #44ca80 0%, 6ee8a5 100%);
+    background-image: linear-gradient(top left 90deg, #6ee8a5 0%, #031608 100%);
+    border-radius: 30px;
+    border: 1px solid #44ca80;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+    cursor: pointer;
+    }
+</style>
+<body>
+    <div class ="logo" >
+        <img src="logo.png" alt="some text"
+        width=180 height=180>
+        
+        <div id ="nav">
+            <a href ="Homepage.html">Home</a>
+            <a href ="#">Member</a>
+            <a href ="#">Savings</a>
+            <a href ="#">Loans</a>
+             <a href ="#">Help</a>
+             
+        </div>
+        <div class ="logout"><a href ="#">Log out</a>
+        </div>
+    </div> 
+    <div id ="memregister">
+        <h1>Member Registration</h1>
+    </div>
+    <div class ="container">
+       
+        <form>
+            <label for= "IPPIS">Ippis No:</label>
+            <input id ="IPPIS" type = "text" placeholder="IPPIS NO" required>
+            <label for ="COOP">Coop No:</label>
+            <input id = "COOP" type = "text" placeholder= "COOP No" required>
+            <label for ="Surname">Surname:</label>
+            <input id = "Surnane" type ="text" required>
+            <label for ="FirstName">First Name:</label>
+            <input id = "FirstName" type ="text" required>
+            <label for ="MiddleName">Middle Name:</label>
+            <input id = "MiddleName" type ="text">
+           <label for ="Sex">Sex:</label>
+           <select id = "Sex">
+               <option value="Female"> Female</option>
+               <option value="Male"> Male</option>
+           </select>
+            <label for ="MobileNo">Mobile No:</label>
+            <input id = "MobileNo" type ="text">
+            <label for="Date"> DOB: </label>
+            <input id="Date" type="date" value="2013-01-25">
+            <label for ="NextofKin">Next of Kin:</label>
+            <input id = "NextofKin" type = "text" placeholder="Next of kin's Name"required>
+            <label for ="NOKPhoneNumber">Nok's Number:</label>
+            <input id ="NOKPhoneNumber" type="text" required>
+            <label for = "NOKEmail">NOK Email:</label>
+            <input id = "NOKEmail" type ="email" placeholder="me@example.com" required>
+            <input type="submit" value="Register">
+
+
+
+
+
+            
+            
+        </form>
+    </div>
+</body>
+</html>

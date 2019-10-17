@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <title>View Member Info</title>
+    <style>
+        .contain
+        {
+            display:flex;
+position:relative;
+margin-left:25%;
+
+border: 1px solid rgb(15, 189, 107);
+text-align: left;
+padding-left: 1%;
+padding-top:2%;
+margin-top: 2%;
+border-radius:11px;
+width:50%;
+        }
+        #search{
+            font-weight: bold;
+            width:250px;
+            text-align: left;
+            float:left;
+            
+
+        }
+    </style>
+    
+</head>
+<body>
+    <div class ="logo" >
+        <img src="logo.png" alt="some text"
+        width=180 height=180>
+        
+        <div id ="nav">
+            <a href ="Homepage.html">Home</a>
+            <a href ="#">Member</a>
+            <a href ="#">Savings</a>
+            <a href ="#">Loans</a>
+             <a href ="#">Help</a>
+             
+        </div>
+        <div class ="logout"><a href ="#">Log out</a>
+        </div>
+    </div> 
+    <div id ="memregister">
+        <h2>Member Information</h2>
+    </div>
+    <div class ="contain">
+        <form>
+            
+            <label for = "CoopNO,IppisNO" id="search">Enter the CoopNo or IppisNO: </label>
+            <input id ="CoopNO,IppisNO" type="search" placeholder="CoopNO or IppisNO">
+            <button></button>
+        </form>
+    </div>
+</body>
+</html>
