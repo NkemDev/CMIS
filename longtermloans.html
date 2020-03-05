@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Long Term Loan Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+       
+    #navi a:link {
+        color: rgb(8, 97, 28);
+        font-weight: bold;
+    }
+    #navi a:hover {
+       
+        color: rgb(0, 83, 4)0;
+        font-weight: bolder;
+        
+        
+    }
+    label{
+        font-weight: bold;
+    }
+    </style>
+    </style>
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom bg-custom">
+        <div class="container pt-2 pb-2">
+            <a href="#" class="navbar-brand"><img src="logo.png" class="img-fluid" alt="logo" width="180px" height="180px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id ="navi">
+            <div class="navbar-collapse collapse" id="navbar9">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">Staff</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">Savings</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">Loans</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">Commodities</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center text-black mb-4">Long Term Loans</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+             <!-- form card search -->
+             <div class="card">
+                
+                <div class="card-body">
+        <form method="POST" class="form-inline">
+            
+        
+                
+                                <input id ="CoopNO,IppisNO" class="form-control ml-5 mr-3" type="search" placeholder="CoopNO or IppisNO">
+            <button type="submit" class="btn-success ml-5 col-md-3">Search</button>
+                
+        </div>
+        <!--endcardbodytag-->
+    </div>
+    <!--endcard tag-->
+</div>
+<!--endtagcol-md-8mx tag-->
+</div>
+<!--end row tag-->
+
+<div class ="row">
+    <div class="col-md-8 mx-auto">
+        <div class ="card mt-5">
+            <div class ="card-body">
+                
+                   <div class="form-group row">
+                       <label for ="FullName" class="col-sm-3 col-form-label"> Name:</label>
+                       <div class = "col-sm-9">
+                       <input type="text" readonly class="form-control-plaintext" id="FullName" placeholder="Full Name">
+                       </div>
+                       </div>
+                       <div class="form-group row">
+                        <label for ="IPPIS" class="col-sm-3 col-form-label"> IPPIS NO:</label>
+                        <div class = "col-sm-9">
+                        <input type="text" readonly class="form-control-plaintext" id="IPPIS" placeholder="IPPIS">
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for ="COOPNO" class="col-sm-3 col-form-label"> COOP NO:</label>
+                            <div class = "col-sm-9">
+                            <input type="text" readonly class="form-control-plaintext" id="COOPNO" placeholder="COOP NO">
+                            </div>
+                            </div>
+                       
+                       
+                            <div class="form-group row">
+                                <label for ="Balance" class="col-sm-3 col-form-label"> Balance:</label>
+                                <div class = "col-sm-3">
+                                <input type="number" readonly class="form-control-plaintext" id="Balance" placeholder="Balance">
+                                </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for ="LoanAmount" class="col-sm-3 col-form-label"> Amount:</label>
+                                    <div class = "col-sm-3">
+                                    <input type="number"  class="form-control" id="Deposit" placeholder="Number">
+                                    </div>
+                                    </div>
+                                   
+                                    <div class="form-group row">
+                                            <label for ="Interest" class="col-sm-3 col-form-label"> Interest:</label>
+                                            <div class = "col-sm-3">
+                                            <input type="number" readonly class="form-control-plaintext" id="Interest" placeholder="Interest">
+                                            </div>
+                                            </div>
+                                      <div class="form-group row">
+                                                <label for ="Lastsalary" class="col-sm-3 col-form-label"> Last Salary:</label>
+                                                <div class = "col-sm-3">
+                                                <input type="number"  class="form-control" id="Lastsalary" placeholder="Number">
+                                                </div>
+                                                </div>
+                                    <div class="form-group row">
+                                        <label for ="Date" class="col-sm-3 col-form-label"> Date:</label>
+                                        <div class = "col-sm-4">
+                                        <input type="date"  class="form-control" id="Date">
+                                        </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for ="Date" class="col-sm-3 col-form-label"> Date to be completed:</label>
+                                            <div class = "col-sm-4">
+                                                <input type="text" readonly class="form-control-plaintext" id="Date" placeholder="Date to be Completed">
+                                            </div>
+                                            </div>
+                                        <div class="form-group row">
+                            <button type="submit" class="btn-success offset-sm-3 col-sm-3 float-right">Save</button>
+                            </div>
+                    
+                    
+            </div>
+            <!--card body-->
+        </div>
+        <!--card mt-->
+    </div> 
+    <!--end col-->
+</div>
+<!--end row-->
+                </form>
+        
+       
+        
+    </div>
+</body>
+</html>
